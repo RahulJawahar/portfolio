@@ -63,7 +63,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.project-card, .skill-category, .about-content, .contact-content').forEach(el => {
+document.querySelectorAll(
+    '.project-card, .skill-category, .about-content, .contact-content, .exp-card, .cert-card, .achievement-card, .edu-card'
+).forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease-out';
@@ -114,3 +116,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Animated counter for stats
+function animateCounter(el, target, suffix = '') {
+    let start = 0;
+    const duration = 1500;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += step;
+        if (start >= target) {
+            start = target;
+            clearInterval(timer);
+        }
+        el.textContent = Math.floor(start) + suffix;
+    }, 16);
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const num = parseInt(text);
+                const suffix = text.replace(num, '');
+                animateCounter(stat, num, suffix);
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const statsSection = document.querySelector('.about-stats');
+if (statsSection) statsObserver.observe(statsSection);
