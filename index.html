@@ -4,38 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Rahul J - Engineering Student specializing in Java, AWS Cloud, DevOps & IoT Development">
     <title>Rahul J | Developer Portfolio</title>
+    <meta name="description"
+        content="Rahul J - Versatile Engineering student specializing in MERN stack, Java, DevOps, and AWS. Building scalable, high-performance applications.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">RJ<span class="logo-dot">.</span></a>
+            <a href="#home" class="logo">RJ<span class="logo-dot">.</span></a>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certs</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
             <div class="gradient-orb orb-1"></div>
@@ -44,289 +50,459 @@
         </div>
         <div class="hero-content">
             <p class="hero-greeting animate-slide-up">Hello, I'm</p>
-            <h1 class="hero-title animate-slide-up delay-1">Rahul <span class="gradient-text">J</span></h1>
-            <p class="hero-subtitle animate-slide-up delay-2">Java Developer | DevOps Engineer | IoT Enthusiast</p>
-            <p class="hero-description animate-slide-up delay-3">Engineering student with expertise in Java, AWS cloud
-                services, Linux & DevOps automation. Building scalable, performance-optimized applications.</p>
+            <h1 class="hero-title animate-slide-up delay-1">
+                <span class="gradient-text">Rahul J</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up delay-2">MERN Stack Developer | Java Engineer | DevOps &amp; Cloud | IoT Enthusiast</p>
+            <p class="hero-description animate-slide-up delay-3">
+                Versatile Engineering student specializing in MERN stack, Java, and AWS. Bridging clean code with scalable infrastructure — seeking an entry-level Software Engineering role.
+            </p>
             <div class="hero-cta animate-slide-up delay-4">
                 <a href="#projects" class="btn btn-primary">View My Projects</a>
                 <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
             <div class="hero-badges animate-slide-up delay-4">
-                <span class="badge">🏆 RHCSA Certified</span>
-                <span class="badge">💻 200+ LeetCode Problems</span>
-                <span class="badge">🥇 Hackathon Winner</span>
+                <a href="https://linkedin.com/in/rahuljawahar22" target="_blank" class="hero-badge">
+                    <span>💼</span> LinkedIn
+                </a>
+                <a href="https://github.com/RahulJawahar" target="_blank" class="hero-badge">
+                    <span>🐙</span> GitHub
+                </a>
+                <a href="https://leetcode.com" target="_blank" class="hero-badge leetcode-badge">
+                    <span>⚡</span> LeetCode 300+
+                </a>
             </div>
         </div>
         <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
+            <div class="mouse"><div class="wheel"></div></div>
             <p>Scroll Down</p>
         </div>
     </section>
 
-    <section id="about" class="about section">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+            <h2 class="section-title">
+                <span class="section-number">01.</span> About Me
+            </h2>
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-frame">
-                        <img src="profile.jpg" alt="Rahul J" class="profile-photo">
+                        <img src="photo.jpg" alt="Rahul J" class="profile-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display:none;">RJ</div>
                     </div>
+                    <div class="image-decoration"></div>
                 </div>
                 <div class="about-text">
-                    <p class="about-intro">Motivated Engineering student with a strong foundation in Java programming
-                        and AWS cloud services.</p>
-                    <p>I have hands-on experience in Linux and DevOps automation, with growing proficiency in frontend
-                        and backend development. I apply problem-solving skills and modern cloud methodologies to build
-                        scalable, performance-optimized applications.</p>
-                    <div class="education-card">
-                        <h4>🎓 Education</h4>
-                        <div class="edu-item">
-                            <strong>B.E. in Electronics and Communication</strong>
-                            <p>KPR Institute of Engineering And Technology, Coimbatore</p>
-                            <span class="edu-meta">CGPA: 8.3 | 2023 - 2027</span>
+                    <p class="about-intro">
+                        Versatile Engineering student specializing in MERN stack development, Java, and AWS.
+                    </p>
+                    <p>
+                        With a background in DevOps automation and Linux, I bridge the gap between clean code and scalable infrastructure. I'm seeking an entry-level Software Engineering position to build high-performance applications using modern cloud and web technologies.
+                    </p>
+                    <p>
+                        My hands-on internship experience spans IoT systems, cloud/DevOps tasks, and full-stack web development. I thrive at the intersection of hardware and software, and I'm always pushing to learn and build.
+                    </p>
+                    <div class="education-cards">
+                        <div class="edu-card">
+                            <div class="edu-icon">🎓</div>
+                            <div class="edu-info">
+                                <h4>KPR Institute of Engineering and Technology</h4>
+                                <p>B.E. Electronics and Communication &nbsp;|&nbsp; CGPA: 8.3</p>
+                                <span>Coimbatore, India &nbsp;|&nbsp; 2023 – 2027</span>
+                            </div>
                         </div>
-                        <div class="edu-item">
-                            <strong>Higher Secondary Certificate (HSC)</strong>
-                            <p>Reliance Matriculation and Higher Secondary School, Namakkal</p>
-                            <span class="edu-meta">95.96% | 2022 - 2023</span>
+                        <div class="edu-card">
+                            <div class="edu-icon">🏫</div>
+                            <div class="edu-info">
+                                <h4>Reliance Matriculation and Higher Secondary School</h4>
+                                <p>Higher Secondary (HSC) &nbsp;|&nbsp; 95.96%</p>
+                                <span>Namakkal, India &nbsp;|&nbsp; 2022 – 2023</span>
+                            </div>
                         </div>
                     </div>
                     <div class="about-stats">
-                        <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Internships</span>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Internships</span>
                         </div>
-                        <div class="stat"><span class="stat-number">5+</span><span
-                                class="stat-label">Certifications</span></div>
-                        <div class="stat"><span class="stat-number">200+</span><span class="stat-label">LeetCode
-                                Solved</span></div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">LeetCode</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Certs</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience section">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">02.</span> Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Feb 2026 - Present</span>
-                        <h3>Java Programming Intern</h3>
-                        <p class="timeline-company">CodeAlpha</p>
-                        <ul>
-                            <li>Developing and debugging application logic for diverse projects focusing on user-centric
-                                features</li>
-                            <li>Optimizing backend processing speed using Java's standard libraries</li>
-                            <li>Implementing efficient data handling and file management systems</li>
-                        </ul>
+            <h2 class="section-title">
+                <span class="section-number">02.</span> Experience
+            </h2>
+            <div class="experience-timeline">
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">🔬</div>
+                        <div class="exp-meta">
+                            <h3>IoT and Embedded Systems Intern</h3>
+                            <p class="exp-company">Durga Tech <span class="exp-tag on-site">On-Site</span></p>
+                        </div>
+                        <span class="exp-date">Jan 2025 – Feb 2025</span>
                     </div>
+                    <ul class="exp-bullets">
+                        <li>Developed IoT-enabled applications using ESP32, integrating real-time sensor data collection and processing for automated monitoring workflows.</li>
+                        <li>Implemented local and cloud-based data logging systems, ensuring 100% data integrity for historical analysis and system performance tracking.</li>
+                        <li>Built custom communication protocols for seamless data transmission between hardware and web-dashboards, reducing manual reporting effort significantly.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2026 - Present</span>
-                        <h3>Cloud & DevOps Trainee</h3>
-                        <p class="timeline-company">KodeKloud Engineer Program</p>
-                        <ul>
-                            <li>Performing real-world system administrator and DevOps tasks in simulated corporate
-                                infrastructure</li>
-                            <li>Resolving tickets related to Linux server management and Docker containerization</li>
-                            <li>Managing user permissions to maintain high system availability</li>
-                        </ul>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">☁️</div>
+                        <div class="exp-meta">
+                            <h3>Cloud &amp; DevOps Trainee</h3>
+                            <p class="exp-company">KodeKloud Engineer Program <span class="exp-tag remote">Ongoing</span></p>
+                        </div>
+                        <span class="exp-date">Jan 2025 – Ongoing</span>
                     </div>
+                    <ul class="exp-bullets">
+                        <li>Currently engaged in a hands-on program performing real-world system administrator and DevOps tasks in a simulated corporate infrastructure.</li>
+                        <li>Resolving tickets related to Linux server management, Docker containerization, and user permissions to maintain high system availability.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2025 - Feb 2025</span>
-                        <h3>IoT and Embedded Systems Intern</h3>
-                        <p class="timeline-company">Durga Tech (On-Site) • Erode, India</p>
-                        <ul>
-                            <li>Developed IoT-enabled applications using ESP32 with real-time sensor data processing
-                            </li>
-                            <li>Implemented local and cloud-based data logging systems ensuring 100% data integrity</li>
-                            <li>Built custom communication protocols for seamless hardware-to-web data transmission</li>
-                        </ul>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon">☕</div>
+                        <div class="exp-meta">
+                            <h3>Java Programming Intern</h3>
+                            <p class="exp-company">Code Alpha</p>
+                        </div>
+                        <span class="exp-date">Feb 2026 – Mar 2026</span>
                     </div>
+                    <ul class="exp-bullets">
+                        <li>Developed and debugged application logic for diverse projects, focusing on building user-centric features and optimizing backend processing speed.</li>
+                        <li>Leveraged Java's standard libraries to implement efficient data handling and file management systems within standalone applications.</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects section">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">03.</span> Featured Projects</h2>
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Featured Projects
+            </h2>
             <div class="projects-grid">
-                <article class="project-card">
+
+                <!-- Farm Animal Detector -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-1" style="display:flex;align-items:center;justify-content:center;font-size:64px;">🐾</div>
+                    </div>
                     <div class="project-content">
-                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">Computer Vision · Python · YOLO · OpenCV</span>
                         <h3 class="project-title">Farm Animal Detector</h3>
-                        <p class="project-desc">Custom YOLO-based object detection model trained to identify Jackals,
-                            Nilgai, and Monkeys with high precision in varying lighting conditions. Integrated OpenCV
-                            for real-time video stream processing at 30+ FPS with background noise filtering.</p>
-                        <div class="project-tech"><span>Python</span><span>YOLO</span><span>OpenCV</span></div>
-                        <span class="project-date">Dec 2024 - March 2025</span>
+                        <p class="project-desc">
+                            Engineered a custom YOLO-based object detection model trained to identify Jackals, Nilgai, and Monkeys with high precision in varying lighting conditions.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Integrated OpenCV for real-time video stream processing, enabling the system to analyze frames at 30+ FPS.</li>
+                            <li>Filtered background noise to minimize false positives significantly.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span><span>YOLO</span><span>OpenCV</span><span>Computer Vision</span>
+                        </div>
+                        <div class="project-date">Dec 2024 – Mar 2025</div>
                     </div>
-                </article>
-                <article class="project-card">
+                </div>
+
+                <!-- Full Stack Food Delivery -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-2" style="display:flex;align-items:center;justify-content:center;font-size:64px;">🍕</div>
+                    </div>
                     <div class="project-content">
-                        <span class="project-tag">DevOps</span>
+                        <span class="project-tag">MERN Stack</span>
+                        <h3 class="project-title">Full Stack Food Delivery Web App</h3>
+                        <p class="project-desc">
+                            Built a full-stack web application using React for frontend and Node.js with Express for backend services.
+                        </p>
+                        <ul class="project-bullets">
+                            <li>Designed and implemented RESTful APIs to handle client-server communication efficiently.</li>
+                            <li>Integrated MongoDB for database management, enabling dynamic data storage and retrieval.</li>
+                            <li>Implemented complete CRUD functionality and built responsive UI with React.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
+                        </div>
+                        <div class="project-date">Jan 2026 – Feb 2026</div>
+                    </div>
+                </div>
+
+                <!-- DevOps Automation -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-3" style="display:flex;align-items:center;justify-content:center;font-size:64px;">⚙️</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">DevOps · Cloud</span>
                         <h3 class="project-title">DevOps Automation Pipeline</h3>
-                        <p class="project-desc">CI/CD pipeline to automate application deployment, reducing manual
-                            intervention. Managed containerized environments using Docker and automated infrastructure
-                            via Ansible on AWS EC2.</p>
-                        <div class="project-tech"><span>Jenkins</span><span>Docker</span><span>Ansible</span><span>AWS
-                                EC2</span></div>
-                        <span class="project-date">Oct 2025 - Dec 2025</span>
+                        <p class="project-desc">
+                            CI/CD pipeline to automate application deployment, reducing manual intervention. Managed containerized environments using Docker and automated infrastructure via Ansible on AWS EC2.
+                        </p>
+                        <div class="project-tech">
+                            <span>Docker</span><span>Ansible</span><span>AWS EC2</span><span>CI/CD</span>
+                        </div>
                     </div>
-                </article>
-                <article class="project-card">
+                </div>
+
+                <!-- Hostel Current Monitor -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-1" style="display:flex;align-items:center;justify-content:center;font-size:64px;opacity:0.8;">⚡</div>
+                    </div>
                     <div class="project-content">
-                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">IoT · Embedded</span>
                         <h3 class="project-title">Hostel Current Monitor</h3>
-                        <p class="project-desc">IoT system for real-time electrical load monitoring with automated
-                            overload disconnect features. Built using ESP32 and ACS712 current sensor for accurate
-                            measurements.</p>
-                        <div class="project-tech"><span>ESP32</span><span>ACS712</span><span>IoT</span></div>
-                        <span class="project-date">2024</span>
+                        <p class="project-desc">
+                            IoT system for real-time electrical load monitoring with automated overload disconnect features. Built using ESP32 and ACS712 current sensor for accurate measurements.
+                        </p>
+                        <div class="project-tech">
+                            <span>ESP32</span><span>ACS712</span><span>IoT</span><span>Embedded C</span>
+                        </div>
                     </div>
-                </article>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills section">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">04.</span> Skills & Expertise</h2>
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Skills &amp; Expertise
+            </h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="skill-icon">💻</div>
                     <h3>Core Programming</h3>
-                    <div class="skill-tags"><span>Java</span><span>Python</span><span>JavaScript</span></div>
+                    <div class="skill-tags">
+                        <span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-icon">☁️</div>
-                    <h3>Cloud & Infrastructure</h3>
-                    <div class="skill-tags"><span>AWS (EC2)</span><span>Linux (RHCSA)</span><span>Cloud Security</span>
+                    <h3>Cloud &amp; Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span>AWS EC2</span><span>S3</span><span>IAM</span><span>Linux (RHCSA)</span><span>Cloud Security</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>DevOps & Tools</h3>
-                    <div class="skill-tags"><span>Docker</span><span>Ansible</span><span>Jenkins</span><span>GitHub
-                            Actions</span><span>Git</span></div>
+                    <div class="skill-icon">🔧</div>
+                    <h3>DevOps &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span><span>Ansible</span><span>Jenkins</span><span>GitHub Actions</span><span>Git/GitHub</span>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <div class="skill-icon">🌐</div>
-                    <h3>Web Development</h3>
+                    <h3>Web Development (MERN)</h3>
                     <div class="skill-tags">
-                        <span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span><span>MongoDB</span>
+                        <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>HTML</span><span>CSS</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-icon">🔌</div>
-                    <h3>IoT & Embedded</h3>
-                    <div class="skill-tags"><span>ESP32</span><span>DHT11</span><span>OpenCV</span><span>Computer
-                            Vision</span></div>
-                </div>
-            </div>
-            <div class="certifications">
-                <h3>🏅 Certifications</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">Red Hat Certified System Administrator (RHCSA)</div>
-                    <div class="cert-item">Docker & Kubernetes - KodeKloud</div>
-                    <div class="cert-item">Industry 4.0 and Industrial IoT - NPTEL</div>
-                    <div class="cert-item">Data Analytics - Deloitte (Forage)</div>
-                    <div class="cert-item">AWS Solution Architect - Forage</div>
+                    <div class="skill-icon">📡</div>
+                    <h3>IoT &amp; Embedded</h3>
+                    <div class="skill-tags">
+                        <span>ESP32</span><span>DHT11</span><span>OpenCV</span><span>Computer Vision</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="achievements" class="achievements section">
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">05.</span> Achievements</h2>
+            <h2 class="section-title">
+                <span class="section-number">05.</span> Certificates &amp; Coding Profiles
+            </h2>
+            <div class="certs-layout">
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🎖️</div>
+                        <div class="cert-info">
+                            <h4>Red Hat Certified System Administrator (RHCSA)</h4>
+                            <p>Red Hat</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">☁️</div>
+                        <div class="cert-info">
+                            <h4>AWS Cloud Practitioner</h4>
+                            <p>Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏭</div>
+                        <div class="cert-info">
+                            <h4>Industry 4.0 and Industrial IoT – NPTEL</h4>
+                            <p>NPTEL</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">📊</div>
+                        <div class="cert-info">
+                            <h4>Data Analytics Completion Certificate</h4>
+                            <p>Deloitte – Forage</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🐳</div>
+                        <div class="cert-info">
+                            <h4>Docker and Kubernetes</h4>
+                            <p>KodeKloud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coding-profiles">
+                    <h3>Coding Profiles</h3>
+                    <div class="profile-cards">
+                        <a href="https://leetcode.com" target="_blank" class="profile-card leetcode">
+                            <div class="profile-icon">⚡</div>
+                            <div class="profile-info">
+                                <h4>LeetCode</h4>
+                                <p>300+ Problems Solved</p>
+                            </div>
+                            <span class="profile-arrow">→</span>
+                        </a>
+                        <a href="https://github.com/RahulJawahar" target="_blank" class="profile-card github">
+                            <div class="profile-icon">🐙</div>
+                            <div class="profile-info">
+                                <h4>GitHub</h4>
+                                <p>Active Projects &amp; Contributions</p>
+                            </div>
+                            <span class="profile-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span> Accomplishments &amp; Activities
+            </h2>
             <div class="achievements-grid">
                 <div class="achievement-card">
-                    <span class="achievement-icon">🥇</span>
-                    <h4>Innovsense - Best Genius</h4>
-                    <p>1st Prize in Ideathon & Project Presentation</p>
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-content">
+                        <h4>Innovsense – Best Genius</h4>
+                        <p>Winner (1st Prize): Ideathon and Project Presentation</p>
+                    </div>
                 </div>
                 <div class="achievement-card">
-                    <span class="achievement-icon">🥇</span>
-                    <h4>Paper Presentations</h4>
-                    <p>1st Prize at Orion and Acumen events</p>
+                    <div class="achievement-icon">📄</div>
+                    <div class="achievement-content">
+                        <h4>Paper Presentations at Orion</h4>
+                        <p>Winner (1st Prize)</p>
+                    </div>
                 </div>
                 <div class="achievement-card">
-                    <span class="achievement-icon">🥇</span>
-                    <h4>Line Follower Competition</h4>
-                    <p>1st Prize Winner</p>
+                    <div class="achievement-icon">🥇</div>
+                    <div class="achievement-content">
+                        <h4>Paper Presentations at Acumen</h4>
+                        <p>Winner (1st Prize)</p>
+                    </div>
                 </div>
                 <div class="achievement-card">
-                    <span class="achievement-icon">🥉</span>
-                    <h4>WATT-A-THON Hackathon</h4>
-                    <p>3rd Prize Winner</p>
+                    <div class="achievement-icon">🤖</div>
+                    <div class="achievement-content">
+                        <h4>Line Follower Competition at Acumen</h4>
+                        <p>Winner (1st Prize)</p>
+                    </div>
                 </div>
                 <div class="achievement-card">
-                    <span class="achievement-icon">👔</span>
-                    <h4>IETE Society, KPRIET</h4>
-                    <p>Relationship Manager</p>
+                    <div class="achievement-icon">⚡</div>
+                    <div class="achievement-content">
+                        <h4>WATT-A-THON Hackathon</h4>
+                        <p>3rd Prize Winner</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">👥</div>
+                    <div class="achievement-content">
+                        <h4>Relationship Manager</h4>
+                        <p>IETE Society, KPRIET</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact section">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title"><span class="section-number">06.</span> Get In Touch</h2>
+            <h2 class="section-title">
+                <span class="section-number">07.</span> Get In Touch
+            </h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p class="contact-intro">I'm always open to discussing new projects, internship opportunities, or
-                        ways to collaborate on innovative solutions.</p>
+                    <p class="contact-intro">
+                        I'm always open to discussing new projects, internship opportunities, or ways to collaborate on innovative solutions.
+                    </p>
                     <div class="contact-details">
                         <a href="tel:+918124671270" class="contact-item">📱 +91 8124671270</a>
                         <a href="mailto:rahuljawahar22@gmail.com" class="contact-item">📧 rahuljawahar22@gmail.com</a>
-                        <a href="#" class="contact-item">📍 Coimbatore, India</a>
+                        <span class="contact-item">📍 Coimbatore, India</span>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/RahulJawahar" class="social-link" aria-label="GitHub"
-                            target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rahul-j-337ab9293/" class="social-link"
-                            aria-label="LinkedIn" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
-                        </a>
+                        <a href="https://linkedin.com/in/rahuljawahar22" target="_blank" class="social-link" title="LinkedIn">in</a>
+                        <a href="https://github.com/RahulJawahar" target="_blank" class="social-link" title="GitHub">GH</a>
+                        <a href="mailto:rahuljawahar22@gmail.com" class="social-link" title="Email">@</a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/maqdnjdj" method="POST">
-                    <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email"
-                            required></div>
-                    <div class="form-group"><textarea id="message" name="message" rows="5" placeholder="Your Message"
-                            required></textarea></div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary btn-full">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Rahul J. Built with ❤️ and lots of ☕</p>
+            <p>© 2026 Rahul J. Built with ❤️ and lots of ☕</p>
         </div>
     </footer>
 
